@@ -1,0 +1,2 @@
+use hugo -t hugo-theme-stack to build into public dir
+then commit the code

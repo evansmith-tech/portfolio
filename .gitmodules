@@ -1,0 +1,7 @@
+[submodule "portfolio/themes/hugo-theme-stack"]
+	path = portfolio/themes/hugo-theme-stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack/
+[submodule "portfolio/public"]
+	path = portfolio/public
+	url = https://github.com/evansmith-tech/evansmith-tech.github.io.git
+	branch = main

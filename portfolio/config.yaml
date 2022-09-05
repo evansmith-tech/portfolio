@@ -1,23 +1,14 @@
 baseURL: 'https://evansmith-tech.github.io/'
 languageCode: 'en-us'
-title: "Evan's Blog"
+title: "Evan's Place"
 paginate: 5
 theme: 'hugo-theme-stack'
 
 languages:
     en:
         languageName: English
-        title: Evan's Blog
+        title: Evan's Place
         weight: 1
-    zh-cn:
-        languageName: 中文
-        title: 演示站点
-        weight: 2
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -45,8 +36,8 @@ params:
     favicon:
 
     footer:
-        since: 2020
-        customText:
+        since: 2000
+        customText: Have a great week! Thanks for coming by!
 
     dateFormat:
         published: Jan 02, 2006
@@ -54,7 +45,7 @@ params:
 
     sidebar:
         emoji: 🤠
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: Senior in College. Former SWE intern at Google.
         avatar:
             enabled: true
             local: true
@@ -149,9 +140,6 @@ params:
     widgets:
         homepage:
             - type: search
-            - type: archives
-              params:
-                  limit: 5
             - type: categories
               params:
                   limit: 10
@@ -192,20 +180,33 @@ params:
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
-    main: []
+    main: 
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+            icon: home
+            newTab: false
+        - identifier: aboutme
+          name: About Me
+          url: /me
+          weight: 1
+          params:
+            icon: user
+            newTab: false
 
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/evansmith-tech
           params:
               icon: brand-github
-
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+        - identifier: linkedin
+          name: linkedin
+          url: https://www.linkedin.com/in/evanisbest
           params:
-              icon: brand-twitter
+              icon: brand-linkedin
 
 related:
     includeNewer: true
